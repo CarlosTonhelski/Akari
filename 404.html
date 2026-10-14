@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Página não encontrada · AKARI</title>
+<meta name="robots" content="noindex">
+<script>
+  // GitHub Pages: envia caminhos desconhecidos para a página 404 do próprio site (rota #/...).
+  (function () {
+    var segs = location.pathname.split("/").filter(Boolean);
+    var tried = /(^|[?&])nf=1/.test(location.search);
+    var base = "/";
+    if (!tried && /github\.io$/.test(location.hostname) && segs.length > 1) base = "/" + segs[0] + "/";
+    var rest = base === "/" ? segs.join("/") : segs.slice(1).join("/");
+    location.replace(base + (tried ? "" : "?nf=1") + "#/" + rest);
+  })();
+</script>
+</head>
+<body style="background:#141414;color:#F5F0E6;font-family:Georgia,serif;text-align:center;padding:80px 20px">
+<p>Este prato saiu do cardápio. <a href="/" style="color:#C5A46D">Voltar ao início</a></p>
+</body>
+</html>
